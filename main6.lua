@@ -1,0 +1,6 @@
+AddEventHandler('playerConnecting', function(name, setReason)
+  print(name .. ' is connecting to the server.')
+  local player = GetPlayerName(source)
+  print(player .. ' has joined the server.')
+  SendChatMessage('Welcome to the server, ' .. player .. '!', -1, 'player')
+end)
